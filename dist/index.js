@@ -24,14 +24,15 @@ function padArray(data, length) {
 function encodeAccount(accountRaw, address) {
   console.log("before");
   console.log(accountRaw);
-  console.log(accountRaw[0]);
   const account = {
     /* eslint-disable @typescript-eslint/no-unsafe-argument */
     nonce: padArray(Array.from(accountRaw[0]), 8),
     balance: padArray(Array.from(accountRaw[1]), 32),
     nonce_length: accountRaw[0].length,
     balance_length: accountRaw[1].length,
-    address: hexToBytesPadInverse(address, 20)
+    address: hexToBytesPadInverse(address, 20),
+    storage_hash: padArray(Array.from(accountRaw[2]), 32),
+    code_hash: padArray(Array.from(accountRaw[3]), 32)
   };
   const trie_key = hexToBytesPadInverse(ethers.keccak256(address), 32);
   console.log("trie key:");

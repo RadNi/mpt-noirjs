@@ -12,6 +12,8 @@ type Account = {
     nonce_length: number;
     balance_length: number;
     address: number[];
+    storage_hash: number[];
+    code_hash: number[];
 };
 type TrieAccount = {
     account: Account;

@@ -1,6 +1,6 @@
 {
   "name": "mpt-noirjs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Typescript suit for mpt-noir",
   "keywords": [
     "mpt",
