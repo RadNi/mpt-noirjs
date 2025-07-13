@@ -14,10 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/RadNi/mpt-noirjs.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
-  },
   "license": "MIT",
   "author": "radni",
   "type": "module",
